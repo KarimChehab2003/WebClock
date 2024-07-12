@@ -1,0 +1,47 @@
+body {
+    background-color: #0C0C0C;
+}
+
+.clock {
+    width: 350px;
+    height: 350px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.number {
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+}
+
+.number:nth-child(1)  { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(2)  { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(3)  { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(4)  { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(5)  { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(6)  { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(7)  { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(8)  { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(9)  { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(10) { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(11) { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+.number:nth-child(12) { transform: rotate(calc(180deg + 360deg / 12 * var(--i))) translate(0,150px) rotate(calc((-360deg / 12 * var(--i)) - 180deg)); }
+
+#secondHand,#minuteHand,#hourHand {
+    transform-origin: 0% 0%;
+    top: 50%;
+    left: 50%;
+}
+
+#secondHand {
+    width: 40%;
+}
+
+#minuteHand {
+    width: 30%;
+}
+
+#hourHand {
+    width: 20%;
+}
